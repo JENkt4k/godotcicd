@@ -5,7 +5,7 @@ on:
 
 jobs:
   run-my-action:
-    name: Checks if this action works
+    name: Checks if this action works 1
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

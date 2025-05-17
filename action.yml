@@ -1,21 +1,39 @@
-name: 'Godot Build Action'
-description: 'GitHub Action to build Godot projects'
-author: 'Your Name'
-
-inputs:
-  godot-version:
-    description: 'Godot version to use'
-    required: false
-    default: '4.2.1'
-  project-path:
-    description: 'Path to Godot project'
-    required: false
-    default: '.'
+name: 'My Custom Action'
+description: 'Say Hello'
+author: 'Leonardo Montini'
 
 runs:
   using: 'node16'
   main: 'dist/index.js'
 
+inputs:
+  name:
+    description: 'The name of the person to greet'
+    required: true
+    default: 'World'
+
 branding:
-  icon: 'package'
-  color: 'blue'
+  icon: 'activity'
+  color: 'green'
+  
+# name: 'Godot Build Action'
+# description: 'GitHub Action to build Godot projects'
+# author: 'Your Name'
+
+# inputs:
+#   godot-version:
+#     description: 'Godot version to use'
+#     required: false
+#     default: '4.2.1'
+#   project-path:
+#     description: 'Path to Godot project'
+#     required: false
+#     default: '.'
+
+# runs:
+#   using: 'node16'
+#   main: 'dist/index.js'
+
+# branding:
+#   icon: 'package'
+#   color: 'blue'
