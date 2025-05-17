@@ -1,0 +1,21 @@
+name: 'Godot Build Action'
+description: 'GitHub Action to build Godot projects'
+author: 'Your Name'
+
+inputs:
+  godot-version:
+    description: 'Godot version to use'
+    required: false
+    default: '4.2.1'
+  project-path:
+    description: 'Path to Godot project'
+    required: false
+    default: '.'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'package'
+  color: 'blue'
