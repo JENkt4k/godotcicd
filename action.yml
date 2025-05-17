@@ -16,12 +16,6 @@ branding:
   icon: 'activity'
   color: 'green'
 
-inputs:
-  name:
-    description: 'The name of the person to greet'
-    required: true
-    default: 'World'
-    
 # name: 'Godot Build Action'
 # description: 'GitHub Action to build Godot projects'
 # author: 'Your Name'
